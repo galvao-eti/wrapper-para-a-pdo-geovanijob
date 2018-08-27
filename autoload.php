@@ -17,12 +17,8 @@ spl_autoload_register(function ($class) {
     // não, vá para o próximo autoloader registrado
         return;
     }
-
-    
     // obtém o nome da classe relativa
-    $relative_class = substr($class, $len);
-
-    
+    $relative_class = substr($class, $len);    
     // substitua o prefixo do namespace pelo diretório base, substitua o namespace
     // separadores com separadores de diretório no nome da classe relativa, acrescentar
     // com .php
